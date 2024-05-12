@@ -90,7 +90,7 @@ function App() {
             return (showFinished || !item.isCompleted) && <div className="todo flex gap-4 items-center justify-between">
               <div className='flex gap-4'>
                 <input name={item.id} onChange={handleCheckbox} checked={item.isCompleted} type="checkbox" id="" />
-                <div className={item.isCompleted ? "line-through" : ""}><div className='text-wrap md:min-w-[270px] md:max-w-[570px] max-w-[150px] min-w-[100%] truncate'>{item.todo}</div></div>
+                <div className={item.isCompleted ? "line-through" : ""}><div className='text-wrap md:min-w-[270px] md:max-w-[570px] max-w-[120px] min-w-[120px] truncate'>{item.todo}</div></div>
               </div>
               <div className='flex gap-4'>
                 <button onClick={(e) => { handleEdit(e, item.id) }} className='bg-blue-500 rounded-xl py-2 px-2 text-white'><FaEdit /></button>
