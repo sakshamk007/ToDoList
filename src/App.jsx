@@ -70,7 +70,7 @@ function App() {
     <>
       <Navbar/>
 
-      <div className='md:w-1/2 w-[80%] md:min-h-[600px] min-h-[80vh] mx-auto md:my-10 my-16 bg-violet-300 rounded-xl py-4 px-8 flex flex-col gap-8'>
+      <div className='md:w-1/2 w-[80%] md:min-h-[600px] min-h-[70vh] mx-auto md:my-10 my-16 bg-violet-300 rounded-xl py-4 px-8 flex flex-col gap-8'>
         <div className='text-center text-xl'>Your Todos</div>
 
         <div className='flex gap-4 justify-center'>
@@ -89,7 +89,7 @@ function App() {
           {todos.map(item=>{
             return (showFinished || !item.isCompleted) && <div className="todo flex gap-4 items-center">
             <input name={item.id} onChange={handleCheckbox} checked={item.isCompleted} type="checkbox" id="" />
-            <div className={item.isCompleted?"line-through":""}><div className='text-wrap md:min-w-[270px] min-w-[150px]'>{item.todo}</div></div>
+            <div className={item.isCompleted?"line-through":""}><div className='text-wrap md:min-w-[270px] min-w-[120px]'>{item.todo}</div></div>
             <button onClick={(e)=>{handleEdit(e, item.id)}} className='bg-blue-500 rounded-xl py-2 px-2 text-white'><FaEdit /></button>
             <button onClick={(e)=>{handleDelete(e, item.id)}} className='bg-red-500 rounded-xl py-2 px-2 text-white'><RiDeleteBin6Fill /></button>  
           </div>

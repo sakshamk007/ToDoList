@@ -8,7 +8,7 @@ const Navbar = () => {
         <ul className='flex md:gap-2'>
             <li className='list-none mx-2'>Home</li>
             <li className='list-none mx-2'>Tasks</li>
-            <li className='list-none mx-2'>Finished Tasks</li>
+            {/* <li className='list-none mx-2'>Finished Tasks</li> */}
         </ul>
       </nav>
     </div>
